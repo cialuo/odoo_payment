@@ -1,0 +1,15 @@
+支付宝，财付通，微信支付模块
+
+1.财付通，和微信支付依赖于支付宝模块部分数据，但是不依赖于支付宝配置
+
+2.每一个模块安装时，都会自动创建一个payment.acquirer，管理员不需要创建payment.acquirer,只需在安装完成时进行配置。
+
+3.支付宝和财付通集成了退款功能，微信没有集成。
+
+4.用户在支付完成时会自动跳转到订单上
+
+5.查看用户的订单支付信息Portal-->Billing-->付款信息
+
+支付模块配置：
+   setting-->payments-->payment acquirer
+   setting-->users-->users 勾选Portal选项
