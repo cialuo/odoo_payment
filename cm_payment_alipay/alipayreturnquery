@@ -1,0 +1,19 @@
+支付宝支付结果回调参数
+
+<QueryDict: {'seller_email': ['sale@100china.cn'],
+ 'total_fee': ['0.12'],
+ 'buyer_email': ['canhuayin2@gmail.com'],
+ 'exterface': ['create_direct_pay_by_user'],
+  'trade_status': ['TRADE_SUCCESS'],
+  'payment_type': ['1'],
+  'notify_id': ['RqPnCoPT3K9%2Fvwbh3InTuJTfarb8EdjRVexbq3Augwzc6lIHyblcNb57gPANy2cS9M07'],
+  'seller_id': ['2088111179700649'],
+  'is_success': ['T'],
+  'notify_time': ['2015-02-02 11:28:12'],
+  'notify_type': ['trade_status_sync'],
+  'sign_type': ['MD5'],
+   'sign': ['4f301f2f7e0d59ffc952c8032a80a2fd'],
+   'out_trade_no': ['SO0011422847632.87'],
+   'trade_no': ['2015020236924621'],
+   'buyer_id': ['2088712139562215'],
+    'subject': ['SO001']}>

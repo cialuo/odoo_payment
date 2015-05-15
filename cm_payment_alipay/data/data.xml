@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+
+        <record id="payment_acquirer_alipay" model="payment.acquirer">
+            <field name="name">alipay</field>
+            <field name="provider">alipay</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="view_template_id" ref="alipay_acquirer_button"/>
+            <field name="environment">test</field>
+            <field name="alipay_service">create_direct_pay_by_user</field>
+            <field name="alipay_partner">2088111179700649</field>
+            <field name="alipay_key">mx8omr8yo1ln01tm0w7aiqvwodmuh0uu</field>
+            <field name="alipay_seller_id">sale@100china.cn</field>
+
+
+
+        </record>
+
+        <function model="payment.acquirer" name="_migrate_alipay_account"/>
+    </data>
+</openerp>

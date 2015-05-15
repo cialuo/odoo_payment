@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+
+        <template id="tenpay_acquirer_button">
+            <form t-att-action="tx_url" method="get" target="_self">
+                <t t-foreach="tx_values['sortkeylist']" t-as="key">
+                    <input type="hidden" t-att-name="key" t-att-value="tx_values.get('tenpay_form','').get(key,'')"/>
+                </t>
+                <input type="hidden" name="sign" t-att-value="tx_values['sign']"/>
+                <button type="submit" width="100px"
+                        t-att-class="submit_class">
+                    <img t-if="not submit_txt" src="/cm_payment_tenpay/static/src/img/tenpay_icon.png"/>
+                    <span t-if="submit_txt">
+                        <t t-esc="submit_txt"/>
+                        <span class="fa fa-long-arrow-right"/>
+                    </span>
+                </button>
+            </form>
+        </template>
+
+    </data>
+</openerp>

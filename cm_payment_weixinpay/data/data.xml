@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+
+        <record id="payment_acquirer_weixinpay" model="payment.acquirer">
+            <field name="name">weixinpay</field>
+            <field name="provider">weixinpay</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="view_template_id" ref="weixinpay_acquirer_button"/>
+            <field name="environment">test</field>
+            <field name="weixinpay_appid">wx771c7b086b6400b1</field>
+            <field name="weixinpay_secret_key">gddhn3081348035519813823194316aa</field>
+            <field name="weixinpay_mch_id">1229175202</field>
+            <field name="weixinpay_payurl">https://api.mch.weixin.qq.com/pay/unifiedorder?</field>
+            <field name="weixinpay_notify_url">http://www.100china.cn/weixinpay/notify</field>
+        </record>
+        <function model="payment.acquirer" name="_migrate_weixinpay_account"/>
+    </data>
+</openerp>

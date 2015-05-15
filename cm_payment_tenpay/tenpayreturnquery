@@ -1,0 +1,40 @@
+财付通支付结果回调参数
+
+"GET /tenpay/notify?
+bank_type=BL&
+discount=0&
+fee_type=1&
+input_charset=GBK&
+notify_id=N-jWn33ig9c2upUf4jMCuOQiGLj2o9l3ppGqVAmFGQzBIj0IhVCkr2UKOTeE5Ltb8ZFjuYtqCcU_wKioCveRH5_4INgk9eyY&
+out_trade_no=SO025&
+partner=1212851101&
+product_fee=12&
+sign_type=MD5&
+time_end=20150210183211&
+total_fee=12&
+trade_mode=1&
+trade_state=0&
+transaction_id=1212851101201502100422855898&
+transport_fee=0&
+sign=2A110BA1CDC5BD1DA00E7878C31A9A66
+
+ HTTP/1.1" 405 -
+
+2015-02-10 10:32:19,684 6678 INFO odoo werkzeug: 218.15.201.210 - - [10/Feb/2015 10:32:19] "
+
+GET /tenpay/return?
+bank_type=BL&
+discount=0&
+fee_type=1&
+input_charset=GBK&
+notify_id=N-jWn33ig9c2upUf4jMCuOQiGLj2o9l3ppGqVAmFGQzBIj0IhVCkr2UKOTeE5Ltb8ZFjuYtqCcU_wKioCveRH5_4INgk9eyY&
+out_trade_no=SO025&partner=1212851101&
+product_fee=12&sign_type=MD5&
+time_end=20150210183211&
+total_fee=12&
+trade_mode=1&
+trade_state=0&
+transaction_id=1212851101201502100422855898&
+transport_fee=0&
+sign=2A110BA1CDC5BD1DA00E7878C31A9A66
+ HTTP/1.1" 405 -
