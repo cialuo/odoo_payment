@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="bind_user_view_users_form" model="ir.ui.view">
+            <field name="name">res.users.preferences.form</field>
+            <field name="model">res.users</field>
+            <field eval="18" name="priority"/>
+            <field name="inherit_id" ref="base.view_users_form_simple_modif"/>
+            <field name="arch" type="xml">
+                <xpath expr="//form/group[@name='preferences']" position='before'>
+                    <group name="binduser">
+                        <field name="oauth_access_token"/>
+                    </group>
+                    <group attrs="{'invisible': [('oauth_access_token', '=', '')]}">
+                        <button string="绑定用户" name="%(cm_third_party_login.action_third_party_login_wizard)d" type='action' class="oe_highlight" help="绑定到本站已注册用户下"/>
+                    </group>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</openerp>

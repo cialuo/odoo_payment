@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <record id="oauth_login_users_form" model="ir.ui.view">
+            <field name="name">oauth.login.users</field>
+            <field name="model">oauth.login.users</field>
+            <field name="arch" type="xml">
+                <form string="formname" version="7.0">
+                    <sheet>
+                        <group>
+                            <field name="user_id"/>
+                            <field name="oauth_access_token" readonly="1"/>
+                            <field name="openid" readonly="1"/>
+                            <field name="provider_id" readonly="1"/>
+                        </group>
+                    </sheet>
+
+                </form>
+            </field>
+        </record>
+        <record id="oauth_login_users_tree" model="ir.ui.view">
+            <field name="name">oauth.login.users</field>
+            <field name="model">oauth.login.users</field>
+            <field name="priority">1</field>
+            <field name="arch" type="xml">
+                <tree string="">
+                    <field name="user_id"/>
+                    <field name="oauth_access_token"/>
+                    <field name="openid"/>
+                    <field name="provider_id"/>
+                </tree>
+            </field>
+        </record>
+        <record id="oauth_login_users_action_tree" model="ir.actions.act_window">
+            <field name="name">oauth.login.users</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">oauth.login.users</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="oauth_login_users_tree"/>
+            <field name="help" type="html">
+                <p>
+                </p>
+            </field>
+        </record>
+
+        <menuitem id="BindUser" name="绑定用户" action="oauth_login_users_action_tree" parent="base.menu_users"/>
+
+    </data>
+</openerp>

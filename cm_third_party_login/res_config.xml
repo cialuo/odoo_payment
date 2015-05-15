@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+        <record model="ir.ui.view" id="view_general_configuration">
+            <field name="name">base.config.settings.oauth</field>
+            <field name="model">base.config.settings</field>
+            <field name="inherit_id" ref="base_setup.view_general_configuration"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='module_auth_oauth']/.." position="after">
+                    <div name="qq">
+                        <div>
+                            <field name="auth_oauth_qq_enabled" class="oe_inline"/>
+                            <label for="auth_oauth_qq_enabled"/>
+                        </div>
+                        <div attrs="{'invisible':[('auth_oauth_qq_enabled','=',False)]}">
+                            <blockquote>
+                                使用qq登录模块,请配置以下项
+                                <br/>
+                                <br/>
+                                <group>
+                                    <field name="auth_oauth_qq_client_id" class="oe_inline"/>
+                                    <field name="auth_oauth_qq_client_secret" class="oe_inline"/>
+                                    <field name="auth_oauth_qq_redirect_uri" class="oe_inline"/>
+                                </group>
+                            </blockquote>
+
+                        </div>
+                    </div>
+                    <div name="taobao">
+                        <div>
+                            <field name="auth_oauth_taobao_enabled" class="oe_inline"/>
+                            <label for="auth_oauth_taobao_enabled"/>
+                        </div>
+                        <div attrs="{'invisible':[('auth_oauth_taobao_enabled','=',False)]}">
+                            <blockquote>
+                                使用taobao登录模块,请配置以下项
+                                <br/>
+                                <group>
+                                    <field name="auth_oauth_taobao_client_id" class="oe_inline"/>
+                                    <field name="auth_oauth_taobao_client_secret" class="oe_inline"/>
+                                    <field name="auth_oauth_taobao_redirect_uri" class="oe_inline"/>
+                                </group>
+                            </blockquote>
+
+                        </div>
+                    </div>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</openerp>
