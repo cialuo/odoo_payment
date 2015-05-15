@@ -44,16 +44,13 @@ class AcquireAlipay(osv.Model):
     }
 
     _defaults = {
-        'alipay_seller_email': 'sale@100china.cn',
-        'alipay_key': 'mx8omr8yo1ln01tm0w7aiqvwodmuh0uu',
-        'alipay_partner': '2088111179700649',
         'alipay_service': 'create_direct_pay_by_user',
         'alipay_input_charset': 'utf-8',
         'alipay_sign_type': 'MD5',
         'alipay_payment_type': '1',
         'alipay_url': 'https://mapi.alipay.com/gateway.do?',
-        'alipay_return_url': 'http://121.40.86.103:8069/c/8/alipay/return',
-        'alipay_refund_notify_url': 'http://121.40.86.103:8069/c/8/alipay/refund'
+        'alipay_return_url': 'http://.../c/8/alipay/return',
+        'alipay_refund_notify_url': 'http://.../c/8/alipay/refund'
 
 
     }

@@ -9,9 +9,9 @@
             <field name="view_template_id" ref="alipay_acquirer_button"/>
             <field name="environment">test</field>
             <field name="alipay_service">create_direct_pay_by_user</field>
-            <field name="alipay_partner">2088111179700649</field>
-            <field name="alipay_key">mx8omr8yo1ln01tm0w7aiqvwodmuh0uu</field>
-            <field name="alipay_seller_id">sale@100china.cn</field>
+            <field name="alipay_partner">...</field>
+            <field name="alipay_key">...</field>
+            <field name="alipay_seller_id">...</field>
 
 
 

@@ -36,13 +36,7 @@ class Acquiretenpay(osv.Model):
     }
     _defaults = {
         'tenpay_url': 'https://gw.tenpay.com/gateway/pay.htm',
-        'tenpay_return_url': 'http://www.100china.cn/tenpay/return',
-        'tenpay_notify_url': 'http://www.100china.cn/tenpay/notify',
-        'tenpay_refund_url': 'http://www.100china.cn/tenpay/refund',
         'tenpay_refund_server_url': 'https://mch.tenpay.com/refundapi/gateway/refund.xml?',
-        'tenpay_partner': '1212851101',
-        'tenpay_key': 'ff27cdaf3bc3fca06072891a4fdbd23f',
-        'tenpay_op_user_passwd': '96e79218965eb72c92a549dd5a330112'
     }
 
 

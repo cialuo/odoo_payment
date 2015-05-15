@@ -39,10 +39,7 @@ class AcquireWeixinpay(osv.Model):
 
     _defaults = {
         'weixinpay_payurl': 'https://api.mch.weixin.qq.com/pay/unifiedorder',
-        'weixinpay_mch_id': '1229175202',
-        'weixinpay_appid': 'wx771c7b086b6400b1',
-        'weixinpay_notify_url': 'http://mall.gddhn.com/c/8/weixinpay/notify',
-        'weixinpay_secret_key': 'gddhn3081348035519813823194316aa',
+        'weixinpay_notify_url': 'http://.../c/8/weixinpay/notify',
     }
 
 

@@ -9,13 +9,13 @@
             <field name="view_template_id" ref="tenpay_acquirer_button"/>
             <field name="environment">test</field>
             <field name="tenpay_url">https://gw.tenpay.com/gateway/pay.htm</field>
-            <field name="tenpay_return_url">http://www.100china.cn/tenpay/return</field>
-            <field name="tenpay_notify_url">http://www.100china.cn/tenpay/notify</field>
-            <field name="tenpay_refund_url">http://www.100china.cn/tenpay/refund</field>
+            <field name="tenpay_return_url">http://.../tenpay/return</field>
+            <field name="tenpay_notify_url">http://.../tenpay/notify</field>
+            <field name="tenpay_refund_url">http://.../tenpay/refund</field>
             <field name="tenpay_refund_server_url">https://mch.tenpay.com/refundapi/gateway/refund.xml?</field>
-            <field name="tenpay_partner">1212851101</field>
-            <field name="tenpay_key">ff27cdaf3bc3fca06072891a4fdbd23f</field>
-            <field name="tenpay_op_user_passwd">96e79218965eb72c92a549dd5a330112</field>
+            <field name="tenpay_partner">...</field>
+            <field name="tenpay_key">...</field>
+            <field name="tenpay_op_user_passwd">...</field>
         </record>
         <function model="payment.acquirer" name="_migrate_tenpay_account"/>
     </data>
