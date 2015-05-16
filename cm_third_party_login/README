@@ -1,0 +1,9 @@
+
+淘宝//QQ接口申请需要client_id client_secrect 以及redirect_uri
+启用登录接口时需要在常规设置中进行配置
+
+用户通过QQ或淘宝登录到服务器上，服务器默认创建新的用户
+用户登录后，可以绑定到系统已有的用户上
+
+https://open.weixin.qq.com/connect/qrconnect?appid=wx91ccb06c40778aa5&redirect_uri=REDIRECT_URI&response_type=code&scope=snsapi_login&state=wechat#wechat_redirect
+
